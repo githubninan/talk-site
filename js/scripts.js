@@ -34,5 +34,20 @@ $(document).ready(function() {
     $("p#before").before("<button class='btn btn-success'>Before Button</button>")
   });
 
+  $("button#picture1").click (function () {
+    $("div#picture-row").after("<img src='img/pic1.jpeg' id='pic1'></img>");
+
+    $("button#picture1").click (function () {
+      $("img#pic1").remove();
+    });
+  })
+
+  $("button#picture2").click (function () {
+    $("div#picture-row").after("<img src='img/pic2.jpeg' id='pic2'></img>");
+
+    $("button#picture2").click (function () {
+      $("img#pic2").remove();
+    });
+  });
 
 });
