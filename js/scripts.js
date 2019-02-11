@@ -24,11 +24,14 @@ $(document).ready(function() {
     $("button#goodbye").click(function() {
       $("ul#user").prepend("<li>Goodbye!</li>");
       $("ul#webpage").prepend ("<li>Goodbye, dear user!</li>");
+      $("div#after").after("<button class='btn btn-success'>After Button</button>");
+
   });
 
   $("button#stop").click(function() {
     $("ul#user").prepend("<li>Stop copying me!</li>");
     $("ul#webpage").prepend ("<li>Pardon me, I meant no offense.</li>");
+    $("p#before").before("<button class='btn btn-success'>Before Button</button>")
   });
 
 
